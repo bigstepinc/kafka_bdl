@@ -21,8 +21,8 @@ tar xzf jdk-8u191-linux-x64.tar.gz && rm -rf jdk-8u191-linux-x64.tar.gz
 
 export JAVA_HOME=${JAVA_HOME:-/opt/jdk1.8.0_191}
 
-echo 'export JAVA_HOME=$JAVA_HOME' >> ~/.bashrc && \
-echo 'export PATH="$PATH:$JAVA_HOME/bin:$JAVA_HOME/jre/bin"' >> ~/.bashrc && \
+echo 'export JAVA_HOME='$JAVA_HOME >> ~/.bashrc && \
+echo 'export PATH='$PATH':'$JAVA_HOME'/bin:'$JAVA_HOME'/jre/bin"' >> ~/.bashrc && \
 bash ~/.bashrc 
 cd $JAVA_HOME && update-alternatives --install /usr/bin/java java $JAVA_HOME/bin/java 1
     
