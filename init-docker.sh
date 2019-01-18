@@ -16,7 +16,7 @@ apt remove --purge -y git
 echo "Installing and configuring Java"
 
 cd /opt && \
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u202-b12/2787e4a523244c269598db4e85c51e0c/jdk-8u202-linux-x64.tar.gz" &&\
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "https://download.oracle.com/otn-pub/java/jdk/8u202-b08/1961070e4c9b4e26a04e7f5a083f551e/jdk-8u202-linux-x64.tar.gz" &&\
 tar xzf jdk-8u202-linux-x64.tar.gz && rm -rf jdk-8u202-linux-x64.tar.gz
 
 export JAVA_HOME=${JAVA_HOME:-/opt/jdk1.8.0_202}
